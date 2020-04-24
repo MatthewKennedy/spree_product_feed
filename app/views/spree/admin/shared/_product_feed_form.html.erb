@@ -2,18 +2,15 @@
 <h2>Google Product Feed</h2>
 <hr>
 <div data-hook="admin_product_form_name">
-
-
-   <%= f.field_container :product_feed_active, class: ['form-group'] do %>
-     <%= f.label :product_feed_active, Spree.t(:product_feed_active) %>
-     <%= f.error_message_on :product_feed_active %>
-     <%= f.check_box :product_feed_active, class: 'form-control' %>
-   <% end %>
-
+ <%= f.field_container :product_feed_active, class: ['form-group'] do %>
+   <%= f.label :product_feed_active, Spree.t(:product_feed_active) %>
+   <%= f.error_message_on :product_feed_active %>
+   <%= f.check_box :product_feed_active, class: 'form-control' %>
+ <% end %>
 
   <%= f.field_container :product_feed_condition, class: ['form-group'] do %>
     <%= f.label :product_feed_condition, raw(Spree.t(:product_feed_condition) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.text_field :product_feed_condition, class: 'form-control title' %>
+    <%= f.select :product_feed_condition, [['New','new'],['Used','used']], {}, { required: 'true', autofocus: 'true', class: 'select2'} %>
     <%= f.error_message_on :product_feed_condition %>
   <% end %>
 
@@ -53,5 +50,4 @@
     <%= f.text_field :product_feed_mpn, class: 'form-control title' %>
     <%= f.error_message_on :product_feed_mpn %>
   <% end %>
-
 </div>
