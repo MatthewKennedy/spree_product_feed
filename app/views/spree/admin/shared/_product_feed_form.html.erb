@@ -10,7 +10,7 @@
 
   <%= f.field_container :product_feed_condition, class: ['form-group'] do %>
     <%= f.label :product_feed_condition, raw(Spree.t(:product_feed_condition) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.select :product_feed_condition, [['New','new'],['Used','used']], {}, { required: 'true', autofocus: 'true', class: 'select2'} %>
+    <%= f.select :product_feed_condition, [['New','new'],['Used','used']], {}, { required: 'false', autofocus: 'true', class: 'select2'} %>
     <%= f.error_message_on :product_feed_condition %>
   <% end %>
 
