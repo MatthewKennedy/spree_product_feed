@@ -8,13 +8,6 @@
    <%= f.check_box :product_feed_active, class: 'form-control' %>
  <% end %>
 
- <%= f.field_container :product_feed_identification, class: ['form-group'] do %>
-   <%= f.label :product_feed_identification, Spree.t(:product_feed_identification) %>
-   <%= f.text_field :product_feed_identification, class: 'form-control title' %>
-   <%= f.error_message_on :product_feed_identification %>
- <% end %>
-
-
  <%= f.field_container :product_feed_title, class: ['form-group'] do %>
    <%= f.label :product_feed_title, Spree.t(:product_feed_title) %>
    <%= f.text_field :product_feed_title, class: 'form-control title' %>
