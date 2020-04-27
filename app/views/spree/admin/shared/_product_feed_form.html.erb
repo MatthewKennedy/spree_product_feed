@@ -8,16 +8,29 @@
    <%= f.check_box :product_feed_active, class: 'form-control' %>
  <% end %>
 
+ <%= f.field_container :product_feed_identification, class: ['form-group'] do %>
+   <%= f.label :product_feed_identification, Spree.t(:product_feed_identification) %>
+   <%= f.text_field :product_feed_identification, class: 'form-control title' %>
+   <%= f.error_message_on :product_feed_identification %>
+ <% end %>
+
+
+ <%= f.field_container :product_feed_title, class: ['form-group'] do %>
+   <%= f.label :product_feed_title, Spree.t(:product_feed_title) %>
+   <%= f.text_field :product_feed_title, class: 'form-control title' %>
+   <%= f.error_message_on :product_feed_title %>
+ <% end %>
+
+ <%= f.field_container :product_feed_description, class: ['form-group'] do %>
+   <%= f.label :product_feed_description, raw(Spree.t(:product_feed_description) + content_tag(:span, ' *', class: 'required')) %>
+   <%= f.text_field :product_feed_description, class: 'form-control title' %>
+   <%= f.error_message_on :product_feed_description %>
+ <% end %>
+
   <%= f.field_container :product_feed_condition, class: ['form-group'] do %>
     <%= f.label :product_feed_condition, raw(Spree.t(:product_feed_condition) + content_tag(:span, ' *', class: 'required')) %>
     <%= f.select :product_feed_condition, [['New','new'],['Used','used']], {}, { required: 'false', autofocus: 'true', class: 'select2'} %>
     <%= f.error_message_on :product_feed_condition %>
-  <% end %>
-
-  <%= f.field_container :product_feed_description, class: ['form-group'] do %>
-    <%= f.label :product_feed_description, raw(Spree.t(:product_feed_description) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.text_field :product_feed_description, class: 'form-control title' %>
-    <%= f.error_message_on :product_feed_description %>
   <% end %>
 
   <%= f.field_container :product_feed_brand, class: ['form-group'] do %>

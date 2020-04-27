@@ -9,9 +9,9 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
     @products.each do |product|
       if product.product_feed_active
         xml.item do
-          xml.tag!('g:id', product.sku)
-          xml.tag!('g:title', product.name)
-          xml.tag!('g:description', product.product_feed_description? ? product.product_feed_description : product.meta_description )
+          xml.tag!('g:id', product.product_feed_identification? ? product.product_feed_identification : product.sku)
+          xml.tag!('g:title', product.product_feed_title? ? product.product_feed_title : product.name)
+          xml.tag!('g:description', product.product_feed_description? ? product.product_feed_description : product.meta_description)
           xml.tag!('g:link', spree.product_url(product))
           xml.tag!('g:image_link', structured_images(product))
           if product.variants_and_option_values(current_currency).any?
@@ -31,6 +31,7 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
           xml.tag!('g:availability', 'out of stock')
         end
           xml.tag!('g:price', product.price_in(current_currency).amount.to_s + ' ' + current_currency)
+          xml.tag!('g:condition', product.product_feed_condition)
           xml.tag!('g:gtin', product.product_feed_gtin)
           xml.tag!('g:brand', product.product_feed_brand)
           xml.tag!('g:mpn', product.product_feed_mpn? ? product.product_feed_mpn : product.sku)
