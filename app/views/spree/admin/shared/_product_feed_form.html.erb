@@ -21,16 +21,11 @@
  <% end %>
 
   <%= f.field_container :product_feed_condition, class: ['form-group'] do %>
-    <%= f.label :product_feed_condition, raw(Spree.t(:product_feed_condition) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.select :product_feed_condition, [['New','new'],['Used','used']], {}, { required: 'false', autofocus: 'true', class: 'select2'} %>
+    <%= f.label :product_feed_condition, Spree.t(:product_feed_condition) %>
+    <%= f.select :product_feed_condition, [['New','new'],['Used','used']], {}, {class: 'select2'} %>
     <%= f.error_message_on :product_feed_condition %>
   <% end %>
 
-  <%= f.field_container :product_feed_brand, class: ['form-group'] do %>
-    <%= f.label :product_feed_brand, raw(Spree.t(:product_feed_brand) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.text_field :product_feed_brand, class: 'form-control title' %>
-    <%= f.error_message_on :product_feed_brand %>
-  <% end %>
 
   <%= f.field_container :product_feed_product_category, class: ['form-group'] do %>
     <%= f.label :product_feed_product_category, raw(Spree.t(:product_feed_product_category) + content_tag(:span, ' *', class: 'required')) %>
@@ -42,18 +37,5 @@
     <%= f.label :product_feed_product_type, raw(Spree.t(:product_feed_product_type) + content_tag(:span, ' *', class: 'required')) %>
     <%= f.text_field :product_feed_product_type, class: 'form-control title' %>
     <%= f.error_message_on :product_feed_product_type %>
-  <% end %>
-
-<hr>
-  <%= f.field_container :product_feed_gtin, class: ['form-group'] do %>
-    <%= f.label :product_feed_gtin, raw(Spree.t(:product_feed_gtin) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.text_field :product_feed_gtin, class: 'form-control title' %>
-    <%= f.error_message_on :product_feed_gtin %>
-  <% end %>
-
-  <%= f.field_container :product_feed_mpn, class: ['form-group'] do %>
-    <%= f.label :product_feed_mpn, raw(Spree.t(:product_feed_mpn) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.text_field :product_feed_mpn, class: 'form-control title' %>
-    <%= f.error_message_on :product_feed_mpn %>
   <% end %>
 </div>
