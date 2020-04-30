@@ -1,4 +1,4 @@
-# SpreeProductFeed
+# Spree Product Feed
 
 ## ToDo
 
@@ -43,9 +43,9 @@ You will notice that you have an option to add a unique barcode to the master pr
 If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` or wish to pass in the product's ```<g:brand>``` to Google Merchant, you can add these in the using Product Properties.
 
 In the example below we are adding ```<g:gender>``` to your product feed data.
-- Form the Admin visit Properties settings and click New Property.
-- Add a new property using the following values: Name = ```Gender``` Presentation = ```product_feed_data```, click Create.
-- Next edit your product and click the Properties tab form the sidebar options.
+- Form the admin visit **Properties** settings and click **New Property**.
+- Add a new property using the following values: Name = ```Gender``` Presentation = ```product_feed_data```, click **Create**.
+- Next edit your product and click the **Properties** tab form the sidebar options.
 - Add a new property searchng for ```Gender``` and then enter the value ```Female```. 
 
 This will add ```<g:gender>Female</g:gender>``` into your feed for the product and all of its variants.
