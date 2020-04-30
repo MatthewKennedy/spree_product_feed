@@ -4,7 +4,7 @@
 
 - Organise the code to recognise a basic product (no variants), Vs a product with variants and process each type with of product differently to get variants displayed in google correctly via group ID.
 - Set up a way to add fields to the 'required product type options' of the feed. For example, in clothing, gender and age are required fields, but they would not be given as selectable variant, an example would be a men's leather jacket would not have a selectable option for gender, yet google requires gender in the feed data.
-- Move Product Feed Option into their a Sidebar view.
+- Move Product Feed Option into their own sidebar view.
 
 ## Installation
 
