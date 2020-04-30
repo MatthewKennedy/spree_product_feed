@@ -9,7 +9,7 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
     @products.each do |product|
       if product.product_feed_active
         xml.item do
-          xml.tag!('g:id', (current_store.url + '_' + structured_sku(product) + '_' + current_currency).downcase)
+          xml.tag!('g:id', (current_store.url + '_product_' + product.default_variant.id.to_s + '_' + current_currency).downcase)
           xml.tag!('g:title', product.product_feed_title? ? product.product_feed_title : product.name)
           xml.tag!('g:description', product.product_feed_description? ? product.product_feed_description : product.meta_description)
           xml.tag!('g:link', spree.product_url(product))
@@ -26,6 +26,8 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
                   end
               end
           end
+
+          xml.tag!('g:item_group_id', (current_store.url + '_product_' + product.id.to_s + '_' + current_currency).downcase )
 
           xml.tag!('g:gtin', structured_barcode(product))
           xml.tag!('g:brand', structured_brand(product))
