@@ -61,8 +61,9 @@ You will notice that you have an option to add a unique identifier to the master
 
 
 ## ToDo
-- Bug fix last variant missing all its option values.
-- Move Product Feed options into their own product sidebar view.
+- Bug fix: In products with variants, some options are missing in the feed data.
+- Clean up code, and find ways to write parts better.
+- Move the extensions feed options into their own sidebar view, from just stuck on the end of the main product view.
 
 ## Testing
 
