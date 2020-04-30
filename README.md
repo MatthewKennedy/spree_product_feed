@@ -40,13 +40,15 @@ Once installed this extension allows you to add individual products to an  RSS f
 You will notice that you have an option to add a unique barcode to the master product, and its variants. This is a requirement for most products passed into Google Merchant Center.
 
 #### Required Fields
-If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` or wish to pass in the product's ```<g:brand>``` to Google Merchant, you can add these in the using the Product Properties section.
+If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` or wish to pass in the product's ```<g:brand>``` to Google Merchant, you can add these in the using Product Properties.
 
-- Visit Properties settings, add new property. In this example we are adding ```<g:gender>``` to your product feed. 
-Add a new property using the following values: Name = ```Gender``` &  Presentation = ```product_feed_data```,click Create.
-- Next Edit your product and click Properties tab in the sidebar. Add a new property searchng for ```Gender``` and then enter the value ```Female```. 
+In the example below we are adding ```<g:gender>``` to your product feed data.
+- Form the Admin visit Properties settings and click New Property.
+- Add a new property using the following values: Name = ```Gender``` Presentation = ```product_feed_data```, click Create.
+- Next edit your product and click the Properties tab form the sidebar options.
+- Add a new property searchng for ```Gender``` and then enter the value ```Female```. 
 
-This will add ```<g:gender>Female</g:gender>``` into your feed for the product and its variants.
+This will add ```<g:gender>Female</g:gender>``` into your feed for the product and all of its variants.
 
 ## Testing
 
