@@ -30,14 +30,19 @@
 
   If your server was running, restart it so that it can find the assets properly.
 
-## Instructions
+## Instructions For Use
 
 Once installed this extension allows you to add individual products to an  RSS feed found at: yourstoredomain.com/products.rss, this can then be submitted to your Google Merchant Centre acount.
 
 You will notice that you have an option to add a unique barcode to the master product, and its variants. This is a requirement for most products passed into Google Merchant Center.
 
+### ToDO
+Find regular expression that reconises common barcode types: ISBN, UPC, GTIN, etc., set the code up to auto use correct idintifier in feed based on barcode type, if none reconised, pass as MPN. If thats too hard, add radio check option to alow user to set unique identifier type.
+
 If you have an item such as clothing that require: ```<g:age_group>``` & ```<g:gender>``` or wish to pass in the product's ```<g:brand>``` to Google Merchant via your RSS feed, you can add these in the Product Properties section as shown below.
 
+### ToDO
+Set up code to output all product properties into feed data where presentation is set to ```product_feed_data```
 
 ## Testing
 
