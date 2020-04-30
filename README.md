@@ -33,9 +33,9 @@ Once installed this extension allows you to add individual products to an  RSS f
 
 ### Selectable Options
 
-If you create a product with variants (options) the Spree Product Feed extension will recconise the product as a "complex product", automaticly take the product variants and create new feed items relitive to each variant and its unique credentials. 
+If you create a product with variants (options) the Spree Product Feed extension will recconise the product as a "complex product", automaticly take the product variants and create new feed items relitive to each variant and its unique credentials.
 
-These products variants are then grouped correctly under the ```<g:item_group_id>```using the master product ID. 
+These products variants are then grouped correctly under the ```<g:item_group_id>```using the master product ID.
 
 An example of this would be a clothing item with sevral **Color** and **Size** options, each with a unique barcode.
 
@@ -49,7 +49,7 @@ In the example below we are adding ```<g:gender>``` to your product feed data.
 - Form the admin visit **Properties** settings and click **New Property**.
 - Add a new property using the following values: Name = ```Gender``` Presentation = ```product_feed_data```, click **Create**.
 - Next edit your product and click the **Properties** tab form the sidebar options.
-- Add a new property searchng for ```Gender``` and then enter the value ```Female```. 
+- Add a new property searchng for ```Gender``` and then enter the value ```Female```.
 
 This will add ```<g:gender>Female</g:gender>``` into your feed for this product and all of its variants.
 
@@ -64,7 +64,6 @@ You will notice that you have an option to add a unique identifier to the master
 
 - Organise the code to recognise a basic product (no variants), Vs. a product with variants and process each type with of product differently to get variants displayed in google correctly via ```<g:item_group_id>```.
 - Set up code to output product properties into feed data where the **Property Presentation** is set to ```product_feed_data```.
-- Set up unique identifier type drop down.
 - Move Product Feed options into their own product sidebar view.
 
 ## Testing
