@@ -3,7 +3,7 @@
 ## ToDo
 
 - Organise the code to recognise a basic product (no variants), Vs. a product with variants and process each type with of product differently to get variants displayed in google correctly via ```<g:item_group_id>```.
-- Set up code to output all product properties into feed data where presentation is set to ```product_feed_data```.
+- Set up code to output product properties into feed data where the **Property Presentation** is set to ```product_feed_data```.
 - Set up unique identifier type drop down.
 - Move Product Feed options into their own product sidebar view.
 
