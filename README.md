@@ -6,7 +6,7 @@
 - Set up a way to add fields to the 'required product type options' of the feed. For example, in clothing, gender and age are required fields, but they would not be given as selectable variant, an example would be a men's leather jacket would not have a selectable option for gender, yet google requires gender in the feed data.
 - Move Product Feed Option into their own sidebar view.
 - Set up code to output all product properties into feed data where presentation is set to ```product_feed_data```.
-- Find regular expression that reconises common barcode types: ISBN, UPC, GTIN, etc., set the code up to auto use correct idintifier in feed based on barcode type, if none reconised, pass as MPN. If thats too hard, add radio check option to alow user to set unique identifier type.
+- Set up unique identifier type drop down.
 
 ## Installation
 
@@ -36,11 +36,11 @@
 
 Once installed this extension allows you to add individual products to an  RSS feed found at: yourstoredomain.com/products.rss, this can then be submitted to your Google Merchant Centre acount.
 
-#### Unique Idetifier
-You will notice that you have an option to add a unique barcode to the master product, and its variants. This is a requirement for most products passed into Google Merchant Center.
 
-#### Required Fields
-If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` or wish to pass in the product's ```<g:brand>``` to Google Merchant, you can add these in the using Product Properties.
+## Required Fields
+
+### Adding Product Specifc Data To Your Feed
+If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into Google Merchant Feed, but do not wish to have these listed on your site as selectable variant options, you can add these to your product feed as follows.
 
 In the example below we are adding ```<g:gender>``` to your product feed data.
 - Form the admin visit **Properties** settings and click **New Property**.
@@ -49,6 +49,14 @@ In the example below we are adding ```<g:gender>``` to your product feed data.
 - Add a new property searchng for ```Gender``` and then enter the value ```Female```. 
 
 This will add ```<g:gender>Female</g:gender>``` into your feed for the product and all of its variants.
+
+### Adding Brand
+Create a property Name = ```Brand``` Presentation = ```product_feed_data```, and this will be added to your feed data.
+
+#### Unique Idetifier
+You will notice that you have an option to add a unique identifier to the master product, and its variants. This is a requirement for most products passed into Google Merchant.
+
+Add your product barcode select the bar
 
 ## Testing
 
