@@ -1,9 +1,9 @@
 # SpreeProductFeed
 
-#ToDo
+## ToDo
 
 - Organise the code to recognise a basic product (no variants), Vs a product with variants and process each type with of product differently to get variants displayed in google correctly via group ID.
-- Set up a way to add fields to the 'required product type options' of the feed. For example, in clothing, gender and age are required fields, but they would not be given as selectable variant, an example would be a men's leather jacket would not have a selectable option for gender, yet google need gender it into the feed data.
+- Set up a way to add fields to the 'required product type options' of the feed. For example, in clothing, gender and age are required fields, but they would not be given as selectable variant, an example would be a men's leather jacket would not have a selectable option for gender, yet google requires gender in the feed data.
 - Move Product Feed Option into their a Sidebar view.
 
 ## Installation
@@ -11,7 +11,7 @@
 1. Add this extension to your Gemfile with this line:
 
     ```ruby
-    gem 'spree_product_feed', github: '[your-github-handle]/spree_product_feed'
+    gem 'spree_product_feed', github: 'matthewkennedy/spree_product_feed'
     ```
 
 2. Install the gem using Bundler
@@ -29,6 +29,15 @@
 4. Restart your server
 
   If your server was running, restart it so that it can find the assets properly.
+
+## instructions
+
+Once installed this extension allows you to add individual products to an  RSS feed found as yourstoredomain.com/products.rss, this can then be submitted to Google Merchant Centre.
+
+You will notice that you have an option to add a unique barcode to the master product, and its variants. This is a requirement for most products passed into Google Merchant Center.
+
+If you have an item such as clothing that requires a gender and age field to be passed into the products feed, please create the relevant property as below, and they will appear in your feed data.
+
 
 ## Testing
 
