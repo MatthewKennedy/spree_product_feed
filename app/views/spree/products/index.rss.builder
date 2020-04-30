@@ -26,10 +26,8 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
                   end
               end
           end
-
           xml.tag!('g:item_group_id', (current_store.url + '_product_' + product.id.to_s + '_' + current_currency).downcase )
-
-          xml.tag!('g:gtin', structured_barcode(product))
+          xml.tag!('g:' + structured_unique_identifier_type(product), structured_unique_identifier(product))
           xml.tag!('g:brand', structured_brand(product))
           xml.tag!('g:product_type', product.product_feed_product_type)
           xml.tag!('g:google_product_category', product.product_feed_product_category)

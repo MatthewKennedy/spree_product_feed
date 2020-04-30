@@ -40,7 +40,15 @@ module Spree
     def structured_sku(product)
       product.default_variant.sku? ? product.default_variant.sku : product.sku
     end
-    
+
+    def structured_unique_identifier(product)
+      product.default_variant.unique_identifier? ? product.default_variant.unique_identifier : product.unique_identifier
+    end
+
+    def structured_unique_identifier_type(product)
+      product.default_variant.unique_identifier_type ? product.default_variant.unique_identifier_type : product.unique_identifier_type
+    end
+
     def structured_barcode(product)
       product.default_variant.barcode? ? product.default_variant.barcode : product.barcode
     end
