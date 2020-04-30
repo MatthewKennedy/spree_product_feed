@@ -36,7 +36,7 @@ Once installed this extension allows you to add individual products to an  RSS f
 
 You will notice that you have an option to add a unique barcode to the master product, and its variants. This is a requirement for most products passed into Google Merchant Center.
 
-If you have an item such as clothing that requires a gender and age field to be passed into the products feed, please create the relevant property as below, and they will appear in your feed data.
+If you have an item such as clothing that require: ```<g:age_group>``` & ```<g:gender>``` or wish to pass in the product's ```<g:brand>``` to Google Merchant via your RSS feed, you can add these in the Product Properties section as shown below.
 
 
 ## Testing
