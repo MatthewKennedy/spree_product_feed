@@ -31,8 +31,6 @@ Spree Product Feed extension allow you to connect your Spree 4 store to Google M
 Once installed this extension allows you to add individual products to an  RSS feed found at: yourstoredomain.com/products.rss, this can then be submitted to your Google Merchant Centre acount.
 
 
-## Required Fields
-
 ### Selectable Options
 
 If you create a product with variants (options) the Spree Product Feed extension will recconise the product as a "complex product", automaticly take the product variants and create new feed items relitive to each variant and its unique credentials. 
@@ -58,10 +56,9 @@ This will add ```<g:gender>Female</g:gender>``` into your feed for this product 
 ### Adding Brand
 Create a property Name = ```Brand``` Presentation = ```product_feed_data```, and this will be added to your feed data.
 
-#### Unique Idetifier
+### Unique Idetifier
 You will notice that you have an option to add a unique identifier to the master product, and its variants. This is a requirement for most products passed into Google Merchant.
 
-Add your product barcode select the bar
 
 ## ToDo
 
