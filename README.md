@@ -1,11 +1,6 @@
 # Spree Product Feed
 
-## ToDo
-
-- Organise the code to recognise a basic product (no variants), Vs. a product with variants and process each type with of product differently to get variants displayed in google correctly via ```<g:item_group_id>```.
-- Set up code to output product properties into feed data where the **Property Presentation** is set to ```product_feed_data```.
-- Set up unique identifier type drop down.
-- Move Product Feed options into their own product sidebar view.
+Spree Product Feed extension allow you to connect your Spree 4 store to Google Muerchant Center via a live RSS feed.
 
 ## Installation
 
@@ -38,8 +33,19 @@ Once installed this extension allows you to add individual products to an  RSS f
 
 ## Required Fields
 
+### Selectable Options
+
+If you create a product with variants (options) the Spree Product Feed extension will recconise the product as a "complex product", automaticly take the product variants and create new feed items relitive to each variant and its unique credentials. 
+
+These products variants are then grouped correctly under the ```<g:item_group_id>```using the master product ID. 
+
+An example of this would be a clothing item with sevral **Color** and **Size** options, each with a unique barcode.
+
+If you are creating variants, be aware that the variants **Options Presentaion** value wil be passed into the feed Option Presentation = "Size" will be entered into the RSS feed as ```<g:size>```.
+
+
 ### Adding Product Specifc Data To Your Feed
-If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into Google Merchant Feed, but do not wish to have these listed on your site as selectable variant options, you can add these to your product feed as follows.
+If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into your Google Merchant Feed data, but do not wish to have these listed on your site as selectable variant options, you can add these to your product feed as follows.
 
 In the example below we are adding ```<g:gender>``` to your product feed data.
 - Form the admin visit **Properties** settings and click **New Property**.
@@ -47,7 +53,7 @@ In the example below we are adding ```<g:gender>``` to your product feed data.
 - Next edit your product and click the **Properties** tab form the sidebar options.
 - Add a new property searchng for ```Gender``` and then enter the value ```Female```. 
 
-This will add ```<g:gender>Female</g:gender>``` into your feed for the product and all of its variants.
+This will add ```<g:gender>Female</g:gender>``` into your feed for this product and all of its variants.
 
 ### Adding Brand
 Create a property Name = ```Brand``` Presentation = ```product_feed_data```, and this will be added to your feed data.
@@ -56,6 +62,13 @@ Create a property Name = ```Brand``` Presentation = ```product_feed_data```, and
 You will notice that you have an option to add a unique identifier to the master product, and its variants. This is a requirement for most products passed into Google Merchant.
 
 Add your product barcode select the bar
+
+## ToDo
+
+- Organise the code to recognise a basic product (no variants), Vs. a product with variants and process each type with of product differently to get variants displayed in google correctly via ```<g:item_group_id>```.
+- Set up code to output product properties into feed data where the **Property Presentation** is set to ```product_feed_data```.
+- Set up unique identifier type drop down.
+- Move Product Feed options into their own product sidebar view.
 
 ## Testing
 
