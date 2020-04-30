@@ -30,9 +30,9 @@
 
   If your server was running, restart it so that it can find the assets properly.
 
-## instructions
+## Instructions
 
-Once installed this extension allows you to add individual products to an  RSS feed found as yourstoredomain.com/products.rss, this can then be submitted to Google Merchant Centre.
+Once installed this extension allows you to add individual products to an  RSS feed found at: yourstoredomain.com/products.rss, this can then be submitted to your Google Merchant Centre acount.
 
 You will notice that you have an option to add a unique barcode to the master product, and its variants. This is a requirement for most products passed into Google Merchant Center.
 
