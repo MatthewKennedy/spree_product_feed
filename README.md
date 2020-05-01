@@ -61,11 +61,8 @@ You will notice that you have an option to add a unique identifier to the master
 
 
 ## ToDo
-- BUG: In products with variants, some options are missing in the feed data.
 - Test in live merchant account.
-- Do research to find out if Google wants ```<g:item_group_id>``` set to the default_variant.id, or the product.id.
 - Write spec tests.
-- Clean up and improve code.
 - Move the extensions feed options into their own sidebar view, from just stuck on the end of the main product view.
 
 ## Testing
@@ -90,4 +87,4 @@ If you'd like to contribute, please take a look at the
 [instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
 pull request.
 
-Copyright (c) 2020 [name of extension creator], released under the New BSD License
+Copyright (c) 2020 Matthew Kennedy, released under the New BSD License
