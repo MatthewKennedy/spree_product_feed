@@ -1,6 +1,6 @@
 module Spree
   module Variants
-    class FeedOptionsPresenter
+    class XmlFeedOptionsPresenter
 
       attr_reader :variant
 
@@ -28,10 +28,6 @@ module Spree
 
           respond_to?(method, true) ? send(method, ov) : present_option(ov)
         end
-      end
-
-      def present_color_option(option)
-        "#{option.option_type.presentation} #{option.name}"
       end
 
       def present_option(option)

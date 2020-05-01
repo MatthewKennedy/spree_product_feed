@@ -13,10 +13,10 @@ xml.tag!('g:product_type', product.product_feed_product_type)
 xml.tag!('g:google_product_category', product.product_feed_product_category)
 xml.tag!('g:item_group_id', (current_currency + '-' + product.sku).upcase + '-' + variant.id.to_s)
 
-options_xml_hash = Spree::Variants::FeedOptionsPresenter.new(variant).xml_options
+options_xml_hash = Spree::Variants::XmlFeedOptionsPresenter.new(variant).xml_options
 
-options_xml_hash.each do |o|
-  xml.tag!('g:'+ o.option_type.presentation.downcase , o.presentation.downcase)
+options_xml_hash.each do |ops|
+  xml.tag!('g:'+ ops.option_type.presentation.downcase , ops.presentation.downcase)
 end
 
 unless product.product_properties.blank?
