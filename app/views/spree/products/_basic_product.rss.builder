@@ -9,8 +9,8 @@ xml.tag!('g:price', product.default_variant.price_in(current_currency).amount.to
 xml.tag!('g:' + structured_unique_identifier_type(product), structured_unique_identifier(product))
 xml.tag!('g:brand', structured_brand(product))
 xml.tag!('g:sku', structured_sku(product))
-xml.tag!('g:product_type', product.product_feed_product_type.downcase)
-xml.tag!('g:google_product_category', product.product_feed_product_category.downcase)
+xml.tag!('g:product_type', product.product_feed_product_type)
+xml.tag!('g:google_product_category', product.product_feed_product_category)
 
 unless product.product_properties.blank?
   xml << render(:partial => 'properties', :locals => { :product => product } )
