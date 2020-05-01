@@ -24,7 +24,7 @@ module Spree
           description: product.description,
           sku: structured_sku(product),
           brand: structured_brand(product),
-          gtin13: structured_barcode(product),
+          gtin13: structured_unique_identifier(product),
           offers: {
             '@type': 'Offer',
             price: product.default_variant.price_in(current_currency).amount,
@@ -47,10 +47,6 @@ module Spree
 
     def structured_unique_identifier_type(product)
       product.default_variant.unique_identifier_type ? product.default_variant.unique_identifier_type : product.unique_identifier_type
-    end
-
-    def structured_barcode(product)
-      product.default_variant.barcode? ? product.default_variant.barcode : product.barcode
     end
 
     def structured_brand(product)
