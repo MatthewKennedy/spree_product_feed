@@ -7,7 +7,6 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
     xml.language(I18n.locale)
 
     @products.each do |product|
-
       if product.product_feed_active
           if product.variants_and_option_values(current_currency).any?
             product.variants.each do |variant|
@@ -21,7 +20,6 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
             end
           end
       end
-
     end
   }
 }

@@ -8,13 +8,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_feed'
   s.version     = SpreeProductFeed.version
-  s.summary     = 'Add extension summary here'
-  s.description = 'Add (optional) extension description here'
+  s.summary     = 'Product Feeds For Spree'
+  s.description = 'Allows product data to be passed to Google Merchant Center'
   s.required_ruby_version = '>= 2.2.7'
 
-  s.author    = 'You'
-  s.email     = 'you@example.com'
-  s.homepage  = 'https://github.com/your-github-handle/spree_product_feed'
+  s.author    = 'Matthew Kennedy'
+  s.email     = 'm.kennedy@me.com'
+  s.homepage  = 'https://github.com/matthewkennedy/spree_product_feed'
   s.license = 'BSD-3-Clause'
 
   s.files       = `git ls-files`.split("\n").reject { |f| f.match(/^spec/) && !f.match(/^spec\/fixtures/) }
