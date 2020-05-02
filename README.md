@@ -41,7 +41,7 @@ An example of this would be a clothing item with several **Color** and **Size** 
 
 If you are creating variants, be aware that the variants **Options Presentation** value will be passed into the feed Option Presentation = "Size" will be entered into the RSS feed as ```<g:size>```.
 
-![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895
+![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
 
 
 ### Adding Product Specific Data To Your Feed
