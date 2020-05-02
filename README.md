@@ -32,9 +32,9 @@ Once installed this extension allows you to add products to an RSS feed found at
 
 
 ### Enhanced Listing
-![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
 
-If you add a product with multiple variants to your product feed, the extension will recognise this product as a "complex product", automatically take each variant and create new feed item grouped under the mater product ID, creating an Enhanced Listing as shown in the image above.
+If you add a product with multiple variants to your product feed, the extension will recognise this product as a "complex product", automatically take each variant and create new feed item grouped under the mater product ID, creating an Enhanced Listing as shown in the image below.
+![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
 
 ### Adding Product Specific Data To Your Feed
 If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into your Google Merchant Feed data, but do not wish to have these listed on your site as selectable variant options, you can add these to your product feed as follows.
