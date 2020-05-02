@@ -31,18 +31,10 @@ Spree Product Feed extension allows you to connect your Spree 4 store to Google 
 Once installed this extension allows you to add products to an RSS feed found at: yourstoredomain.com/products.rss, this can then be submitted to your Google Merchant Centre account.
 
 
-### Selectable Options
-
-If you create a product with variants (options) the Spree Product Feed extension will recognise the product as a "complex product", automatically take the product variants and create new feed items relative to each variant and its unique credentials.
-
-These products variants are then grouped correctly under the ```<g:item_group_id>```using the master product ID.
-
-An example of this would be a clothing item with several **Color** and **Size** options, each with a unique barcode.
-
-If you are creating variants, be aware that the variants **Options Presentation** value will be passed into the feed Option Presentation = "Size" will be entered into the RSS feed as ```<g:size>```.
-
+### Enhanced Listing
 ![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
 
+If you add a product with multiple variants to your product feed, the extension will recognise this product as a "complex product", automatically take each variant and create new feed item grouped under the mater product ID, creating an Enhanced Listing as shown in the image above.
 
 ### Adding Product Specific Data To Your Feed
 If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into your Google Merchant Feed data, but do not wish to have these listed on your site as selectable variant options, you can add these to your product feed as follows.
