@@ -1,6 +1,6 @@
 # Spree Product Feed
 
-Spree Product Feed extension allow you to connect your Spree 4 store to Google Muerchant Center via a live RSS feed.
+Spree Product Feed extension allows you to connect your Spree 4 store to Google Muerchant Center via a live RSS feed.
 
 ## Installation
 
@@ -40,6 +40,8 @@ These products variants are then grouped correctly under the ```<g:item_group_id
 An example of this would be a clothing item with several **Color** and **Size** options, each with a unique barcode.
 
 If you are creating variants, be aware that the variants **Options Presentation** value will be passed into the feed Option Presentation = "Size" will be entered into the RSS feed as ```<g:size>```.
+
+![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895
 
 
 ### Adding Product Specific Data To Your Feed
