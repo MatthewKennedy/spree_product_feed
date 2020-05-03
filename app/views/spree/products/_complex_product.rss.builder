@@ -18,6 +18,6 @@ options_xml_hash.each do |ops|
   xml.tag!('g:'+ ops.option_type.presentation.downcase , ops.presentation.downcase)
 end
 
-unless product.product_properties.blank?
-  xml << render(:partial => 'properties', :locals => { :product => product } )
-end
+#unless product.product_properties.blank?
+#  xml << render(:partial => 'properties', :locals => { :product => product } )
+#end
