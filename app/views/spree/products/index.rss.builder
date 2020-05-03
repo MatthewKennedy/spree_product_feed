@@ -11,7 +11,7 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
           if product.variants_and_option_values(current_currency).any?
             product.variants.each do |variant|
               xml.item do
-                xml << render(:partial => 'complex_product', :locals => { :product => product, :variant => variant } ).gsub(/^/, '      ')
+                # xml << render(:partial => 'complex_product', :locals => { :product => product, :variant => variant } ).gsub(/^/, '      ')
               end
             end
           else
