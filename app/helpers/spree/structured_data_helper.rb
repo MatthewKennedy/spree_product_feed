@@ -42,7 +42,7 @@ module Spree
     end
 
     def structured_unique_identifier(product)
-      product.default_variant.unique_identifier? ? product.default_variant.unique_identifier : product.unique_identifier
+      product.default_variant.unique_identifier? ? product.default_variant.unique_identifier : ''
     end
 
     def structured_unique_identifier_type(product)

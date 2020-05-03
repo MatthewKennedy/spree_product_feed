@@ -6,7 +6,9 @@ xml.tag!('g:image_link', structured_images(product))
 xml.tag!('g:condition', product.product_feed_condition)
 xml.tag!('g:availability', product.in_stock? ? 'in stock' : 'out of stock')
 xml.tag!('g:price', product.default_variant.price_in(current_currency).amount.to_s + ' ' + current_currency)
-xml.tag!('g:' + structured_unique_identifier_type(product), structured_unique_identifier(product))
+if structured_unique_identifier_type(product).present?
+  xml.tag!('g:' + structured_unique_identifier_type(product), structured_unique_identifier(product))
+end
 xml.tag!('g:brand', structured_brand(product))
 xml.tag!('g:sku', structured_sku(product))
 xml.tag!('g:product_type', product.product_feed_product_type)
