@@ -13,5 +13,5 @@ xml.tag!('g:product_type', product.product_feed_product_type)
 xml.tag!('g:google_product_category', product.product_feed_product_category)
 
 unless product.product_properties.blank?
-  xml << render(:partial => 'properties', :locals => { :product => product } )
+  xml << render(:partial => 'props', :locals => { :product => product } )
 end

@@ -19,5 +19,5 @@ options_xml_hash.each do |ops|
 end
 
 unless product.product_properties.blank?
-  xml << render(:partial => 'properties', :locals => { :product => product } )
+  xml << render(:partial => 'props', :locals => { :product => product } )
 end
