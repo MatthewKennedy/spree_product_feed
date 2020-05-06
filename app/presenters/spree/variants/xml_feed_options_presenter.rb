@@ -55,11 +55,11 @@ module Spree
       end
 
       def present_url_option(option)
-        "#{option.option_type.id}_#{option.id}"
+        "#{option.option_type.name.downcase}=#{option.option_type.id}_#{option.id}"
       end
 
       def join_options(options)
-        options.first
+        options.join("&")
       end
 
     end

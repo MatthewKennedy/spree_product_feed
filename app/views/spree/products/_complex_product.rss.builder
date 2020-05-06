@@ -1,7 +1,7 @@
 xml.tag!('g:id', (current_store.id.to_s + '-' + current_currency + '-' + product.id.to_s + '-' + variant.id.to_s).downcase)
 xml.tag!('g:title', product.product_feed_title? ? product.product_feed_title : product.name)
 xml.tag!('g:description', product.product_feed_description? ? product.product_feed_description : product.meta_description)
-xml.tag!('g:link', spree.product_url(product) + '?option=' + xml_url = Spree::Variants::XmlFeedOptionsPresenter.new(variant).xml_url_option )
+xml.tag!('g:link', spree.product_url(product) + '?variant=' +  variant.id.to_s)
 xml.tag!('g:image_link', structured_images(variant))
 xml.tag!('g:condition', product.product_feed_condition)
 xml.tag!('g:availability', variant.in_stock? ? 'in stock' : 'out of stock')
