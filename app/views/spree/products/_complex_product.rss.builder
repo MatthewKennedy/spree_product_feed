@@ -15,7 +15,11 @@ xml.tag!('g:item_group_id', (current_store.id.to_s + '-' + current_currency + '-
 
 options_xml_hash = Spree::Variants::XmlFeedOptionsPresenter.new(variant).xml_options
 options_xml_hash.each do |ops|
-  xml.tag!('g:'+ ops.option_type.presentation.downcase , ops.presentation.downcase)
+  if ops.option_type[:name] == "color"
+    xml.tag!('g:'+ ops.option_type.presentation.downcase , ops.name)
+  else
+    xml.tag!('g:'+ ops.option_type.presentation.downcase , ops.presentation)
+  end
 end
 
 unless product.product_properties.blank?
