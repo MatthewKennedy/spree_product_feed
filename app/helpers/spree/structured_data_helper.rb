@@ -17,20 +17,27 @@ module Spree
         {
           '@context': 'https://schema.org/',
           '@type': 'Product',
-          url: spree.product_url(product),
           name: product.name,
           image: structured_images(product),
           description: product.description,
           sku: structured_sku(product),
-          brand: structured_brand(product),
           gtin13: structured_unique_identifier(product),
+          brand: {
+            '@type': 'Brand',
+            name: structured_brand(product)
+          },
           offers: {
             '@type': 'Offer',
+            url: spree.product_url(product),
             price: product.default_variant.price_in(current_currency).amount,
             priceCurrency: current_currency,
-            availability: product.in_stock? ? 'InStock' : 'OutOfStock',
-            url: spree.product_url(product),
-            availabilityEnds: product.discontinue_on ? product.discontinue_on.strftime('%F') : ''
+            itemCondition: 'https://schema.org/' + product.product_feed_condition.camelize + 'Condition',
+            availability: product.in_stock? ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+            availabilityEnds: product.discontinue_on ? product.discontinue_on.strftime('%F') : '',
+            seller: {
+              '@type': 'Organization',
+              name: current_store.name
+            }  
           }
         }
       end
