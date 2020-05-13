@@ -31,13 +31,13 @@ module Spree
             url: spree.product_url(product),
             price: product.default_variant.price_in(current_currency).amount,
             priceCurrency: current_currency,
-            itemCondition: 'https://schema.org/' + product.product_feed_condition.camelize + 'Condition',
+            itemCondition: structured_condition(product),
             availability: product.in_stock? ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
             availabilityEnds: product.discontinue_on ? product.discontinue_on.strftime('%F') : '',
             seller: {
               '@type': 'Organization',
               name: current_store.name
-            }  
+            }
           }
         }
       end
@@ -49,6 +49,14 @@ module Spree
 
     def structured_unique_identifier(product)
       product.default_variant.unique_identifier? ? product.default_variant.unique_identifier : product.unique_identifier
+    end
+
+    def structured_condition(product)
+      if product.product_feed_condition == 'used'
+        'https://schema.org/UsedCondition'
+      else
+        'https://schema.org/NewCondition'
+      end
     end
 
     def structured_unique_identifier_type(product)
