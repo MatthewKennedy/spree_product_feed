@@ -3,6 +3,7 @@ module Spree
     def self.prepended(base)
 
       base.respond_to :rss, :only => [:index]
+      
     end
   end
 end

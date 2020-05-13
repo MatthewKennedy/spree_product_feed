@@ -1,7 +1,7 @@
 module Spree
   module StructuredDataHelper
     def products_structured_data(products)
-      content_tag :script, type: 'application/ld+json' do
+      content_tag :script, id: 'productStructuredData', type: 'application/ld+json' do
         raw(
           products.map do |product|
             structured_product_hash(product)
@@ -17,7 +17,6 @@ module Spree
         {
           '@context': 'https://schema.org/',
           '@type': 'Product',
-          '@id': "#{spree.root_url}product_#{product.id}",
           url: spree.product_url(product),
           name: product.name,
           image: structured_images(product),
