@@ -1,4 +1,5 @@
 //= require spree/api/storefront/cart
+//= require ../shared/product_added_modal
 //= require ../shared/variant_select
 
 var ADD_TO_CART_FORM_SELECTOR = '.add-to-cart-form'
