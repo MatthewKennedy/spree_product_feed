@@ -54,13 +54,6 @@ Create a property Name = ```Brand``` Presentation = ```product_feed_data```, and
 You will notice that you have an option to add a unique identifier to the master product, and its variants. This is a requirement for most products passed into Google Merchant.
 
 ## ToDo's
-
-### ToDo For Enhanced Listings
-- Variant linking (Do we link: add clicked variant to cart, or to load clicked variant in product page?).
-- variant image linking (Check images are correct in the feed for variants).
-
-### ToDo
-- Test in live merchant account.
 - Write spec tests.
 - Move the extensions feed options into their own sidebar view, from just stuck on the end of the main product view.
 
