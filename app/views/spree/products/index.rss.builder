@@ -4,7 +4,7 @@ xml.rss("xmlns:g" => "http://base.google.com/ns/1.0", :version=>"2.0"){
     xml.title(current_store.name)
     xml.link(current_store.url)
     xml.description("Find out about new products first! You'll always be in the know when new products become available")
-    xml.language(I18n.locale)
+    xml.language('en-us')
 
     @products = @products.except(:limit)
     @products.each do |product|
