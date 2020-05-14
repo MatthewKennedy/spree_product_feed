@@ -4,7 +4,7 @@ Give your Spree 4 store instant access to some of the best product advertising p
 
 The Spree Product Feed extension allows you to connect your Spree 4 store directly to Google Merchant Center and Facebook Catalog via a live RSS feed.
 
-Additionally, your products can then be indirectly imported from Google Merchant Center to Microsoft Advertising, where they can be displayed on Bing Shopping, Yahoo Shopping and other partners of Microsoft Advertising.
+Additionally, your products can be indirectly imported from Google Merchant Center to Microsoft Advertising, giving you access to Bing Shopping, Yahoo Shopping and other partners of Microsoft Advertising.
 
 ## Installation
 
@@ -32,16 +32,18 @@ Additionally, your products can then be indirectly imported from Google Merchant
 
 ## Instructions For Use
 
-Once installed this extension allows you to add products to an RSS feed found at: yourstoredomain.com/products.rss, this can then be submitted to your Google Merchant Centre account.
+Once installed this extension allows you to add products to an RSS feed found at ```yourstoredomain.com/products.rss```, this can then be submitted to your Google Merchant Centre and Facebook Catalog accounts.
 
 
 ### Enhanced Listing
 
-If you add a product with multiple variants to your product feed, the extension will recognise this product as a "complex product", automatically take each variant and create new feed item grouped under the mater product ID, creating an Enhanced Listing as shown in the image below.
+If you add a product with multiple variants to your product feed, the extension will automatically recognise this product as a "complex product", take each variant and create new feed item grouped under the mater product ID based on the unique variant options (Size, Color).
+
+This is great for building Enhanced Listings on Google Shopping and works perfectly with Facebook Catalog.
 ![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
 
 ### Adding Product Specific Data To Your Feed
-If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into your Google Merchant Feed data, but do not wish to have these listed on your site as selectable variant options, you can add these to your product feed as follows.
+If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into your Google Merchant Feed, you can add these to your product feed as follows.
 
 In the example below we are adding ```<g:gender>``` to your product feed data.
 - Form the admin visit **Properties** settings and click **New Property**.
