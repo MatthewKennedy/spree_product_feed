@@ -51,7 +51,10 @@ In the example below we are adding ```<g:gender>``` to your product feed data.
 - Next edit your product and click the **Properties** tab form the sidebar options.
 - Add a new property searching for ```Gender``` and then enter the value ```Female```.
 
+
 This will add ```<g:gender>Female</g:gender>``` into your feed for this product and all of its variants.
+
+- NOTE: Ideally, you will want to un-check the **SHOW PROPERTY** option so that this Product Property does not get displayed on your store front.
 
 ### Adding Brand
 Often a brand is required along with a Unique Identifier to get your product approved in Google Merchant Center.
