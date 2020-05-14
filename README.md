@@ -1,6 +1,8 @@
 # Spree Product Feed
 
-The Spree Product Feed extension allows you to connect your Spree 4 store to Google Merchant Center via a live RSS feed.
+The Spree Product Feed extension allows you to connect your Spree 4 store directly to Google Merchant Center and Facebook Catalog via a live RSS feed.
+
+Additionally, your products can then indirectly imported from Google Merchant Center to Microsoft Advertising, where they can be displayed on Bing Shopping, Yahoo Shopping and other partners of Microsoft Advertising.
 
 ## Installation
 
