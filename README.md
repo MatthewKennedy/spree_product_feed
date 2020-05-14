@@ -54,10 +54,14 @@ In the example below we are adding ```<g:gender>``` to your product feed data.
 This will add ```<g:gender>Female</g:gender>``` into your feed for this product and all of its variants.
 
 ### Adding Brand
-Create a property Name = ```Brand``` Presentation = ```product_feed_data```, and this will be added to your feed data.
+Often a brand is required along with a Unique Identifier to get your product approved in Google Merchant Center.
+
+You can achieve this by following the **Adding Product Specific Data** section above, but using the following: Name = ```Brand``` Presentation = ```product_feed_data```.
 
 ### Unique Identifier
-You will notice that you have an option to add a unique identifier to the master product, and its variants. This is a requirement for most products passed into Google Merchant.
+You will notice that you now have an option to add a unique identifier to the master product and its variants.
+
+It is a minimum requirement for most products passed into Google Merchant Center to have a Barcode (GTIN), or a Manufactures Part Number (MPN), you can set the type of unique identifier you prefer in the product and variant settings.
 
 ## ToDo's
 - Write spec tests.
