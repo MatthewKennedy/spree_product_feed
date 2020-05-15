@@ -48,13 +48,15 @@ If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:
 In the example below we are adding ```<g:gender>``` to your product feed data.
 - Form the admin visit **Properties** settings and click **New Property**.
 - Add a new property using the following values: Name = ```Gender``` Presentation = ```product_feed_data```, click **Create**.
-- Next edit your product and click the **Properties** tab form the sidebar options.
+- Next, edit your product and click the **Properties** tab form the sidebar options.
 - Add a new property searching for ```Gender``` and then enter the value ```Female```.
 
 
-This will add ```<g:gender>Female</g:gender>``` into your feed for this product and all of its variants.
+This will add ```<g:gender>Female</g:gender>``` into your feed for this product.
 
-- NOTE: Ideally, you will want to un-check the **SHOW PROPERTY** option so that this Product Property does not get displayed on your store front.
+**NOTE:** There are two things to keep in mind when adding data to your feed using Product Properties.
+- Ideally, you will want to un-check the **SHOW PROPERTY** option so that this Product Property does not get displayed on your store front.
+- Product Specific date entered using Product Properties will be applied to all variants.
 
 ### Adding A Brand
 Often a brand is required along with a Unique Identifier to get your product approved in Google Merchant Center.
