@@ -45,7 +45,7 @@ This is great for building Enhanced Listings on Google Shopping and works perfec
 ### Adding Product Specific Data To Your Feed
 If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into your Google Merchant Feed, you can add these to your product feed as follows.
 
-In the example below we are adding ```<g:gender>Female</g:gender>``` to your product feed data.
+In the example below we are adding ```<g:gender>Female</g:gender>``` to your feed data.
 - Form the admin visit **Properties** settings and click **New Property**.
 - Add a new property using the following values: Name = ```Gender``` Presentation = ```product_feed_data```, click **Create**.
 - Next, edit your product and click the **Properties** tab form the sidebar options.
