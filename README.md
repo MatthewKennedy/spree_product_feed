@@ -4,7 +4,7 @@ Give your Spree store instant access to some of the best product advertising pla
 
 The Spree Product Feed extension allows you to connect your Spree store directly to Google Merchant Center and Facebook Catalog via a live RSS feed.
 
-Additionally, your products can be indirectly imported from Google Merchant Center to Microsoft Advertising, giving you access to Bing Shopping, Yahoo Shopping and other partners of Microsoft Advertising.
+Additionally, your products can then be indirectly imported from Google Merchant Center across to Microsoft Advertising, giving you access to Bing Shopping, Yahoo Shopping and other partners of Microsoft Advertising.
 
 ## Installation
 
