@@ -1,22 +1,22 @@
 <br />
-<h2>Google Product Feed</h2>
+<h2><%= Spree.t(:product_feed) %></h2>
 <hr>
 <div data-hook="admin_product_form_name">
  <%= f.field_container :product_feed_active, class: ['form-group'] do %>
+  <%= f.check_box :product_feed_active %>
    <%= f.label :product_feed_active, Spree.t(:product_feed_active) %>
    <%= f.error_message_on :product_feed_active %>
-   <%= f.check_box :product_feed_active, class: 'form-control' %>
  <% end %>
 
  <%= f.field_container :product_feed_title, class: ['form-group'] do %>
    <%= f.label :product_feed_title, Spree.t(:product_feed_title) %>
-   <%= f.text_field :product_feed_title, class: 'form-control title' %>
+   <%= f.text_field :product_feed_title,  placeholder: Spree.t(:product_feed_title_placeholder_text), class: 'form-control title' %>
    <%= f.error_message_on :product_feed_title %>
  <% end %>
 
  <%= f.field_container :product_feed_description, class: ['form-group'] do %>
-   <%= f.label :product_feed_description, raw(Spree.t(:product_feed_description) + content_tag(:span, ' *', class: 'required')) %>
-   <%= f.text_field :product_feed_description, class: 'form-control title' %>
+   <%= f.label :product_feed_description, Spree.t(:product_feed_description) %>
+   <%= f.text_field :product_feed_description, placeholder: Spree.t(:product_feed_description_placeholder_text), class: 'form-control title' %>
    <%= f.error_message_on :product_feed_description %>
  <% end %>
 
@@ -28,14 +28,14 @@
 
 
   <%= f.field_container :product_feed_product_category, class: ['form-group'] do %>
-    <%= f.label :product_feed_product_category, raw(Spree.t(:product_feed_product_category) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.text_field :product_feed_product_category, class: 'form-control title' %>
+    <%= f.label :product_feed_product_category, Spree.t(:product_feed_product_category) %>
+    <%= f.text_field :product_feed_product_category, placeholder: Spree.t(:product_feed_category_placeholder_text), class: 'form-control title' %>
     <%= f.error_message_on :product_feed_product_category %>
   <% end %>
 
   <%= f.field_container :product_feed_product_type, class: ['form-group'] do %>
-    <%= f.label :product_feed_product_type, raw(Spree.t(:product_feed_product_type) + content_tag(:span, ' *', class: 'required')) %>
-    <%= f.text_field :product_feed_product_type, class: 'form-control title' %>
+    <%= f.label :product_feed_product_type, Spree.t(:product_feed_product_type) %>
+    <%= f.text_field :product_feed_product_type, placeholder: Spree.t(:product_feed_type_placeholder_text), class: 'form-control title' %>
     <%= f.error_message_on :product_feed_product_type %>
   <% end %>
 </div>
