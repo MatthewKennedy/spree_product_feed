@@ -37,7 +37,7 @@ Once installed this extension allows you to add products to an RSS feed found at
 
 ### Enhanced Listing
 
-If you add a product with multiple variants to your product feed, the extension will automatically recognise this product as a "complex product", take each variant and create new feed item grouped under the mater product ID based on the unique variant options (Size, Color).
+If you add a product with multiple variants to your product feed, the extension will automatically recognise this, take each variant and create new feed item grouped under the mater product ID.
 
 This is great for building Enhanced Listings on Google Shopping and works perfectly with Facebook Catalog.
 ![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
