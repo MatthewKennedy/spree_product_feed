@@ -37,7 +37,7 @@ Once installed this extension allows you to add products to an RSS feed found at
 
 ### Enhanced Listings
 
-If you add a product with multiple variants to your product feed, the extension will automatically recognise this, take each variant and create new feed item grouped under the mater product ID.
+If you add a product with multiple variants to the feed, the extension will automatically recognise this, take each variant and create new feed item grouped under the mater product id.
 
 This is great for building Enhanced Listings on Google Shopping and works perfectly with Facebook Catalog.
 ![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
@@ -56,7 +56,7 @@ This will add ```<g:gender>Female</g:gender>``` into your feed for this product 
 
 - NOTE: Ideally, you will want to un-check the **SHOW PROPERTY** option so that this Product Property does not get displayed on your store front.
 
-### Adding Brand
+### Adding A Brand
 Often a brand is required along with a Unique Identifier to get your product approved in Google Merchant Center.
 
 You can achieve this by following the **Adding Product Specific Data** section above, but using the following: Name = ```Brand``` Presentation = ```product_feed_data```.
@@ -67,8 +67,9 @@ You will notice that you now have an option to add a unique identifier to the ma
 It is a minimum requirement for most products passed into Google Merchant Center to have a Barcode (GTIN), or a Manufactures Part Number (MPN), you can set the type of unique identifier you prefer in the product and variant settings.
 
 ## ToDo's
+- Set XML language based on current.store language (upcoming release of Spree 4.X)
+- Add in sale price logic when this is part of the spree core.
 - Write spec tests.
-- Move the extensions feed options into their own sidebar view, from just stuck on the end of the main product view.
 
 ## Testing
 
