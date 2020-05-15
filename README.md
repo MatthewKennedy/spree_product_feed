@@ -1,6 +1,6 @@
 # Spree Product Feed
 
-Give your Spree 4.0 store instant access to some of the best product advertising platforms available.
+Give your Spree store instant access to some of the best product advertising platforms available.
 
 The Spree Product Feed extension allows you to connect your Spree store directly to Google Merchant Center and Facebook Catalog via a live RSS feed.
 
@@ -35,7 +35,7 @@ Additionally, your products can be indirectly imported from Google Merchant Cent
 Once installed this extension allows you to add products to an RSS feed found at ```yourstoredomain.com/products.rss```, this can then be submitted to your Google Merchant Centre and Facebook Catalog accounts.
 
 
-### Enhanced Listing
+### Enhanced Listings
 
 If you add a product with multiple variants to your product feed, the extension will automatically recognise this, take each variant and create new feed item grouped under the mater product ID.
 
