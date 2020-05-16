@@ -58,12 +58,6 @@ By default this extension will use your product name for the ```<g:title>``` fie
 
 If you wish to override these, you can easily do so by adding product the properties ```<g:title>``` and ```<g:description>``` and setting the Presentations = ```product_feed_data```, as described above.
 
-**NOTES:** There are a few things to keep in mind when adding data to your feed using product properties.
-- Make sure to use the **g:** notation for the property name.
-- Make sure you set the property Presentation = ```product_feed_data``` for it to show in the feed.
-- Ideally, you will want to un-check the **SHOW PROPERTY** option so that this property is not visable on your store front (Spree 4.x).
-- Any data entered using properties should apply to all variants (options) of this product.
-
 ## Unique Identifiers
 You will notice that you now have an option to add a unique identifier to the master product and its variants.
 
