@@ -44,8 +44,6 @@ Once the extension is installed, you will notice a new checkbox (**Add this prod
 ### Adding Product Specific Data To Your Feed
 To quickly add data to your product feed its ideal to use **Product Properties** and create templates through **Prototypes**, we'll run through an example below:
 
-If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>``` and ```<g:material>``` adding into your products feed, you can add these as follows:
-
 In the example below we are adding ```<g:gender>female</g:gender>``` to your products feed data.
 - Form the admin panel visit **Properties** settings and click **New Property**.
 - Add a new property using the following values: Name = ```g:gender``` Presentation = ```product_feed_data```, click **Create**.
