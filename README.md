@@ -1,6 +1,6 @@
 # Spree Product Feed
 
-Give your Spree store instant access to some of the best product advertising platforms available.
+**Give your Spree store instant access to some of the best product advertising platforms available.**
 
 The Spree Product Feed extension allows you to connect your Spree store directly to Google Merchant Center and Facebook Catalog via a live RSS feed.
 
@@ -52,7 +52,7 @@ In the example below we are adding ```<g:gender>female</g:gender>``` to your pro
 - Next, edit your product and click the **Properties** tab form the sidebar options.
 - Add a new property by typing **g:gender** in the property field, this will search for your newly created propery, select the proertys when it appears in the list, and then enter the value ```female``` and click **update**.
 
-We recommend creating ```g:google_product_category```, ```g:condition```, ```g:brand``` and ```g:product_type```, and then setting those as a  **Prototype** for repeated use.
+We recommend creating ```g:google_product_category```, ```g:condition```, ```g:brand``` and ```g:product_type```, and then setting these as a  **Prototype** for repeated use.
 
 ### Overiding The Default Title & Description
 
