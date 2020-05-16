@@ -52,9 +52,11 @@ module Spree
     end
 
     def structured_condition(product)
-      if product.product_feed_condition == 'used'
+      return '' unless product.property('g:condition').present?
+
+      if product.property('g:condition') == 'used'
         'https://schema.org/UsedCondition'
-      else
+      elsif product.property('g:condition') == 'new'
         'https://schema.org/NewCondition'
       end
     end
@@ -64,9 +66,9 @@ module Spree
     end
 
     def structured_brand(product)
-      return '' unless product.property('brand').present?
+      return '' unless product.property('g:brand').present?
 
-      product.property('brand')
+      product.property('g:brand')
     end
 
     def structured_images(product)
