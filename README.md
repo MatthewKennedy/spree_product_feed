@@ -48,7 +48,7 @@ In the example below we are adding ```<g:gender>female</g:gender>``` to your pro
 - Form the admin panel visit **Properties** settings and click **New Property**.
 - Add a new property using the following values: Name = ```g:gender``` Presentation = ```product_feed_data```, click **Create**.
 - Next, edit your product and click the **Properties** tab form the sidebar options.
-- Add a new property by typing **g:gender** in the property field, this will search for your newly created propery, select the property when it appears in the list, and then enter the value ```female``` and click **update**.
+- Add a new property by typing **g:** in the property field, this will search for your newly created propery, select the property when it appears in the list, and then enter the value ```female``` and click **update**.
 
 We recommend creating ```g:google_product_category```, ```g:condition```, ```g:brand``` and ```g:product_type```, and then setting these as a  **Prototype** for repeated use.
 
