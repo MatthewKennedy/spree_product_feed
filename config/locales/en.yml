@@ -3,16 +3,6 @@
 
 en:
   spree:
-    product_feed: Product Feed Information
     product_feed_active: Add this product to your product feed
-    product_feed_title: Give your product a unique title
-    product_feed_title_placeholder_text: Men's Cotton T-Shirt with Spree logo
-    product_feed_description: Enter a short description
-    product_feed_description_placeholder_text: "100% pure cotton men's t-shirt, ideal for work, gym or home."
-    product_feed_condition: What condition is this item?
-    product_feed_product_category: Enter your products feed category here
-    product_feed_category_placeholder_text: Apparel & Accessories > Clothing > Shirts & Tops
-    product_feed_product_type: Give your product a type
-    product_feed_type_placeholder_text: Home > Men > Tops > T-Shirts
     unique_identifier: Unique Identifier
     unique_identifier_type: Unique Identifier Type
