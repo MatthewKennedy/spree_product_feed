@@ -43,20 +43,20 @@ This is great for building Enhanced Listings on Google Shopping and works perfec
 ![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
 
 ### Adding Product Specific Data To Your Feed
-If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>```, ```<g:material>``` or just want to add ```<g:brand>``` into your product feed, you can add these as follows:
+If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>```, ```<g:material>``` or just want to add ```<g:brand>``` into your products feed, you can add these as follows:
 
 In the example below we are adding ```<g:gender>female</g:gender>``` to your products feed data.
 - Form the admin panel visit **Properties** settings and click **New Property**.
 - Add a new property using the following values: Name = ```g:gender``` Presentation = ```product_feed_data```, click **Create**.
 - Next, edit your product and click the **Properties** tab form the sidebar options.
-- Add a new property by typing in the property field **g:gender** this will search for your newly created propery: ```g:gender```, select g:gender when it appears in the list, and then enter the value ```female``` and click **update**.
+- Add a new property by typing **g:gender** in the property field, this will search for your newly created propery, select the proertys when it appears in the list, and then enter the value ```female``` and click **update**.
 
 
-This will add ```<g:gender>female</g:gender>``` into your feed for this specific product. Repaet this process to add any other data you require.
+You will now have ```<g:gender>female</g:gender>``` in your feed for this specific item. Repaet this process to add any other data you require.
 
-**NOTE:** There are a few things to keep in mind when adding data to your feed using Product Properties.
+**NOTE:** There are a few things to keep in mind when adding data to your feed using product properties.
 - Make sure to use the **g:** notation for the property name.
-- Ideally, you will want to un-check the **SHOW PROPERTY** option so that this property is not visable on your store front.
+- Ideally, you will want to un-check the **SHOW PROPERTY** option so that this property is not visable on your store front (Spree 4.x).
 - Any data entered using properties should apply to all variants (options) of this product.
 
 ### Unique Identifiers
