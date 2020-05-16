@@ -6,6 +6,13 @@ The Spree Product Feed extension allows you to connect your Spree store directly
 
 Additionally, your products can then be indirectly imported from Google Merchant Center across to Microsoft Advertising, giving you access to Bing Shopping, Yahoo Shopping and other partners of Microsoft Advertising.
 
+### Enhanced Listings
+
+If you add a product with multiple variants to the feed, the extension will automatically recognise this, take each variant and create new feed item grouped under the master product id.
+
+This is great for building Enhanced Listings on Google Shopping and works perfectly with Facebook Catalog.
+![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
+
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
@@ -32,21 +39,10 @@ Additionally, your products can then be indirectly imported from Google Merchant
 
 ## Instructions For Use
 
-Once installed this extension allows you to add products to an RSS feed found at ```yourstoredomain.com/products.rss```, this can then be submitted to your Google Merchant Centre and Facebook Catalog accounts.
-
-
-### Enhanced Listings
-
-If you add a product with multiple variants to the feed, the extension will automatically recognise this, take each variant and create new feed item grouped under the master product id.
-
-This is great for building Enhanced Listings on Google Shopping and works perfectly with Facebook Catalog.
-![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
-
-## Adding Fields To Your Product Feed
-
-To quickly add data to your product feed use **Product Properties** and create templates through **Prototypes**.
+Once installed you will notice a new checkbox is avalable prompting you to **Add this product to your product feed** once checked this will add your product to an RSS feed located at ```yourstoredomain.com/products.rss```, this can then be submitted to your Google Merchant Centre and Facebook Catalog accounts.
 
 ### Adding Product Specific Data To Your Feed
+To quickly add data to your product feed its ideal to use **Product Properties** and create templates through **Prototypes**, we'll run through an example below:
 
 If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>``` and ```<g:material>``` adding into your products feed, you can add these as follows:
 
