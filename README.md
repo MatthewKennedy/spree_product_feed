@@ -69,7 +69,9 @@ In the example below we are adding ```<g:gender>female</g:gender>``` to your pro
 
 ### Overiding the Default Title and Description
 
-By default this extension will use your product name for the ```<g:title>``` field, and the meta description for the ```<g:description>``` field. If you wish to override these, you can easily do so by adding product the properties ```<g:title>``` and ```<g:description>``` and setting the Presentations = ```product_feed_data```, as described above.
+By default this extension will use your product name for the ```<g:title>``` field, and the meta description for the ```<g:description>``` field.
+
+If you wish to override these, you can easily do so by adding product the properties ```<g:title>``` and ```<g:description>``` and setting the Presentations = ```product_feed_data```, as described above.
 
 
 **NOTES:** There are a few things to keep in mind when adding data to your feed using product properties.
