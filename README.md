@@ -42,17 +42,30 @@ If you add a product with multiple variants to the feed, the extension will auto
 This is great for building Enhanced Listings on Google Shopping and works perfectly with Facebook Catalog.
 ![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
 
+## Adding Fields To Your Product Feed
+
+To quilcly add data to your product feed reccomend using Product Properties and creatinga teplate throguh Prototypes.
+
+### Creating A Prototype Template
+
+- Form the admin panel visit **Properties** settings and click **New Property**.
+- Add a new property using the following values: Name = ```g:google_product_category``` Presentation = ```product_feed_data```, click **Create**.
+- Repeat the process above for ```g:brand```, ```g:product_type``` and any other properties you will use as standard for your products feed data.
+- Next, visit the **Prototypes** menu and click **New Prototype**, in the properties section add your newly created properties, name it Default Feed Properties and click **Create**.
+- Next, edit the product you want to add these to, click **Properties** from the sidebar menu, and then click add **Select From Pototype**.
+- Select **Default Feed Properties** and add the desired values in each feild, then click **Update**.
+
+You now have a custom made template for your product feed.
+
 ### Adding Product Specific Data To Your Feed
-If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>```, ```<g:material>``` or just want to add ```<g:brand>``` into your products feed, you can add these as follows:
+
+If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>```, ```<g:material>``` into your products feed, you can add these as follows:
 
 In the example below we are adding ```<g:gender>female</g:gender>``` to your products feed data.
 - Form the admin panel visit **Properties** settings and click **New Property**.
 - Add a new property using the following values: Name = ```g:gender``` Presentation = ```product_feed_data```, click **Create**.
 - Next, edit your product and click the **Properties** tab form the sidebar options.
 - Add a new property by typing **g:gender** in the property field, this will search for your newly created propery, select the proertys when it appears in the list, and then enter the value ```female``` and click **update**.
-
-
-You will now have ```<g:gender>female</g:gender>``` in your feed for this specific item. Repaet this process to add any other data you require.
 
 **NOTE:** There are a few things to keep in mind when adding data to your feed using product properties.
 - Make sure to use the **g:** notation for the property name.
