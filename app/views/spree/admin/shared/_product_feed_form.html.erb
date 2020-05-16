@@ -10,13 +10,13 @@
 
  <%= f.field_container :product_feed_title, class: ['form-group'] do %>
    <%= f.label :product_feed_title, Spree.t(:product_feed_title) %>
-   <%= f.text_field :product_feed_title,  placeholder: Spree.t(:product_feed_title_placeholder_text), class: 'form-control title' %>
+   <%= f.text_field :product_feed_title,  placeholder: Spree.t(:product_feed_title_placeholder_text), class: 'form-control' %>
    <%= f.error_message_on :product_feed_title %>
  <% end %>
 
  <%= f.field_container :product_feed_description, class: ['form-group'] do %>
    <%= f.label :product_feed_description, Spree.t(:product_feed_description) %>
-   <%= f.text_field :product_feed_description, placeholder: Spree.t(:product_feed_description_placeholder_text), class: 'form-control title' %>
+   <%= f.text_field :product_feed_description, placeholder: Spree.t(:product_feed_description_placeholder_text), class: 'form-control' %>
    <%= f.error_message_on :product_feed_description %>
  <% end %>
 
@@ -29,13 +29,13 @@
 
   <%= f.field_container :product_feed_product_category, class: ['form-group'] do %>
     <%= f.label :product_feed_product_category, Spree.t(:product_feed_product_category) %>
-    <%= f.text_field :product_feed_product_category, placeholder: Spree.t(:product_feed_category_placeholder_text), class: 'form-control title' %>
+    <%= f.text_field :product_feed_product_category, placeholder: Spree.t(:product_feed_category_placeholder_text), class: 'form-control' %>
     <%= f.error_message_on :product_feed_product_category %>
   <% end %>
 
   <%= f.field_container :product_feed_product_type, class: ['form-group'] do %>
     <%= f.label :product_feed_product_type, Spree.t(:product_feed_product_type) %>
-    <%= f.text_field :product_feed_product_type, placeholder: Spree.t(:product_feed_type_placeholder_text), class: 'form-control title' %>
+    <%= f.text_field :product_feed_product_type, placeholder: Spree.t(:product_feed_type_placeholder_text), class: 'form-control' %>
     <%= f.error_message_on :product_feed_product_type %>
   <% end %>
 </div>
