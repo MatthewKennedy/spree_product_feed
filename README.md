@@ -48,7 +48,7 @@ To quickly add data to your product feed use **Product Properties** and create t
 
 ### Adding Product Specific Data To Your Feed
 
-If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>```, ```<g:material>``` into your products feed, you can add these as follows:
+If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>``` and ```<g:material>``` adding into your products feed, you can add these as follows:
 
 In the example below we are adding ```<g:gender>female</g:gender>``` to your products feed data.
 - Form the admin panel visit **Properties** settings and click **New Property**.
