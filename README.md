@@ -6,9 +6,9 @@ The Spree Product Feed extension allows you to connect your Spree store directly
 
 Additionally, your products can then be indirectly imported from Google Merchant Center across to Microsoft Advertising, giving you access to Bing Shopping, Yahoo Shopping and other partners of Microsoft Advertising.
 
-### Enhanced Listings
+### Enhanced Listings Ready
 
-If you add a product with multiple variants to the feed, the extension will automatically recognise this, take each variant and create new feed item grouped under the master product id.
+Spree Product Feed extension will automatically recognise products with variants, take each variant and create new feed item grouped under the master product id.
 
 This is great for building Enhanced Listings on Google Shopping and works perfectly with Facebook Catalog.
 ![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
