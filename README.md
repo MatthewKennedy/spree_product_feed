@@ -44,18 +44,7 @@ This is great for building Enhanced Listings on Google Shopping and works perfec
 
 ## Adding Fields To Your Product Feed
 
-To quickly add data to your product feed recommend using Product Properties and creating template through Prototypes.
-
-### Creating A Prototype Template
-
-- Form the admin panel visit **Properties** and click **New Property**.
-- Add a new property using the following values: Name = ```g:google_product_category``` Presentation = ```product_feed_data```, click **Create**.
-- Repeat the process above for ```g:brand```, ```g:product_type``` and any other properties you will use as standard for your products feed data.
-- Next, visit the **Prototypes** menu and click **New Prototype**, in the properties section add your newly created properties, name it Default Feed Properties and click **Create**.
-- Next, edit the product you want to add these to, click **Properties** from the sidebar menu, and then click add **Select From Pototype**.
-- Select **Default Feed Properties** and add the desired values in each feild, then click **Update**.
-
-You now have a custom made template for the stock Google Merchant Center product feed data.
+To quickly add data to your product feed use **Product Properties** and create templates through **Prototypes**.
 
 ### Adding Product Specific Data To Your Feed
 
@@ -67,15 +56,17 @@ In the example below we are adding ```<g:gender>female</g:gender>``` to your pro
 - Next, edit your product and click the **Properties** tab form the sidebar options.
 - Add a new property by typing **g:gender** in the property field, this will search for your newly created propery, select the proertys when it appears in the list, and then enter the value ```female``` and click **update**.
 
-### Overiding the Default Title and Description
+We recommend creating ```g:google_product_category```, ```g:brand``` and ```g:product_type``` and setting those as a  **Prototype** for repeated use.
+
+### Overiding The Default Title & Description
 
 By default this extension will use your product name for the ```<g:title>``` field, and the meta description for the ```<g:description>``` field.
-
 If you wish to override these, you can easily do so by adding product the properties ```<g:title>``` and ```<g:description>``` and setting the Presentations = ```product_feed_data```, as described above.
 
 
 **NOTES:** There are a few things to keep in mind when adding data to your feed using product properties.
 - Make sure to use the **g:** notation for the property name.
+- Make sure you set the property Presentation = ```product_feed_data``` for it to show in the feed.
 - Ideally, you will want to un-check the **SHOW PROPERTY** option so that this property is not visable on your store front (Spree 4.x).
 - Any data entered using properties should apply to all variants (options) of this product.
 
