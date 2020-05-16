@@ -62,7 +62,7 @@ This will add ```<g:gender>Female</g:gender>``` into your feed for this specific
 ### Unique Identifiers
 You will notice that you now have an option to add a unique identifier to the master product and its variants.
 
-It is a minimum requirement for most products passed into Google Merchant Center to have a Barcode (GTIN), or a Manufactures Part Number (MPN), you can set the type of unique identifier you prefer in the product and variant settings.
+It is a minimum requirement for most products passed into Google Merchant Center to have a Barcode (GTIN), or a Manufactures Part Number (MPN), you can also set the type of unique identifier that you prefer to use, in the product and variant settings.
 
 ## ToDo's
 - Add in sale price logic when this is part of the spree core.
