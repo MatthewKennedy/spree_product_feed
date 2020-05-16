@@ -39,7 +39,7 @@ This is great for building Enhanced Listings on Google Shopping and works perfec
 
 ## Instructions For Use
 
-Once installed you will notice a new checkbox is avalable prompting you to **Add this product to your product feed** once checked this will add your product to an RSS feed located at ```yourstoredomain.com/products.rss```, this can then be submitted to your Google Merchant Centre and Facebook Catalog accounts.
+Once the extension is installed, you will notice a new checkbox (**Add this product to your product feed**) is avalable in the **Edit Product  / Details** section. Once checked this will add your product to an RSS feed located at ```yourstoredomain.com/products.rss```, this can then be submitted to your Google Merchant Centre and Facebook Catalog accounts.
 
 ### Adding Product Specific Data To Your Feed
 To quickly add data to your product feed its ideal to use **Product Properties** and create templates through **Prototypes**, we'll run through an example below:
