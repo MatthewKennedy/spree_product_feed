@@ -61,8 +61,8 @@ We recommend creating ```g:google_product_category```, ```g:condition```, ```g:b
 ### Overiding The Default Title & Description
 
 By default this extension will use your product name for the ```<g:title>``` field, and the meta description for the ```<g:description>``` field.
-If you wish to override these, you can easily do so by adding product the properties ```<g:title>``` and ```<g:description>``` and setting the Presentations = ```product_feed_data```, as described above.
 
+If you wish to override these, you can easily do so by adding product the properties ```<g:title>``` and ```<g:description>``` and setting the Presentations = ```product_feed_data```, as described above.
 
 **NOTES:** There are a few things to keep in mind when adding data to your feed using product properties.
 - Make sure to use the **g:** notation for the property name.
