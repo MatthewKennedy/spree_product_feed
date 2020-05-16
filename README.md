@@ -44,18 +44,18 @@ This is great for building Enhanced Listings on Google Shopping and works perfec
 
 ## Adding Fields To Your Product Feed
 
-To quilcly add data to your product feed reccomend using Product Properties and creatinga teplate throguh Prototypes.
+To quickly add data to your product feed recommend using Product Properties and creating template through Prototypes.
 
 ### Creating A Prototype Template
 
-- Form the admin panel visit **Properties** settings and click **New Property**.
+- Form the admin panel visit **Properties** and click **New Property**.
 - Add a new property using the following values: Name = ```g:google_product_category``` Presentation = ```product_feed_data```, click **Create**.
 - Repeat the process above for ```g:brand```, ```g:product_type``` and any other properties you will use as standard for your products feed data.
 - Next, visit the **Prototypes** menu and click **New Prototype**, in the properties section add your newly created properties, name it Default Feed Properties and click **Create**.
 - Next, edit the product you want to add these to, click **Properties** from the sidebar menu, and then click add **Select From Pototype**.
 - Select **Default Feed Properties** and add the desired values in each feild, then click **Update**.
 
-You now have a custom made template for your product feed.
+You now have a custom made template for the stock Google Merchant Center product feed data.
 
 ### Adding Product Specific Data To Your Feed
 
@@ -72,7 +72,7 @@ In the example below we are adding ```<g:gender>female</g:gender>``` to your pro
 - Ideally, you will want to un-check the **SHOW PROPERTY** option so that this property is not visable on your store front (Spree 4.x).
 - Any data entered using properties should apply to all variants (options) of this product.
 
-### Unique Identifiers
+## Unique Identifiers
 You will notice that you now have an option to add a unique identifier to the master product and its variants.
 
 It is a minimum requirement for most products passed into Google Merchant Center to have a Barcode (GTIN), or a Manufactures Part Number (MPN), you can also set the type of unique identifier that you prefer to use, in the product and variant settings.
