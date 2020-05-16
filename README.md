@@ -72,6 +72,10 @@ In the example below we are adding ```<g:gender>female</g:gender>``` to your pro
 - Ideally, you will want to un-check the **SHOW PROPERTY** option so that this property is not visable on your store front (Spree 4.x).
 - Any data entered using properties should apply to all variants (options) of this product.
 
+### Overiding the Default Title and Description
+
+By default this extension will use your product name for the ```<g:title>``` field, and the meta description for the ```<g:description>``` field. If you wish to override these, you can easily do so by adding product the properties ```<g:title>``` and ```<g:description>``` as described above, if you wish to use a custom title and description on every product, add them to your Default Feed Properties.
+
 ## Unique Identifiers
 You will notice that you now have an option to add a unique identifier to the master product and its variants.
 
