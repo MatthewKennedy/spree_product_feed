@@ -56,7 +56,7 @@ In the example below we are adding ```<g:gender>female</g:gender>``` to your pro
 - Next, edit your product and click the **Properties** tab form the sidebar options.
 - Add a new property by typing **g:gender** in the property field, this will search for your newly created propery, select the proertys when it appears in the list, and then enter the value ```female``` and click **update**.
 
-We recommend creating ```g:google_product_category```, ```g:brand``` and ```g:product_type``` and setting those as a  **Prototype** for repeated use.
+We recommend creating ```g:google_product_category```, ```g:condition```, ```g:brand``` and ```g:product_type``` and setting those as a  **Prototype** for repeated use.
 
 ### Overiding The Default Title & Description
 
