@@ -43,33 +43,28 @@ This is great for building Enhanced Listings on Google Shopping and works perfec
 ![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
 
 ### Adding Product Specific Data To Your Feed
-If you have an item such as clothing that requires: ```<g:age_group>``` & ```<g:gender>``` to be passed into your Google Merchant Feed, you can add these to your product feed as follows.
+If you have an item such as clothing that requires: ```<g:age_group>```, ```<g:gender>```, ```<g:material>``` or want to add ```<g:brand>``` into your product feed, you can add these as follows:
 
 In the example below we are adding ```<g:gender>Female</g:gender>``` to your product feed data.
-- Form the admin visit **Properties** settings and click **New Property**.
-- Add a new property using the following values: Name = ```Gender``` Presentation = ```product_feed_data```, click **Create**.
+- Form the admin panel visit **Properties** settings and click **New Property**.
+- Add a new property using the following values: Name = ```g:gender``` Presentation = ```product_feed_data```, click **Create**.
 - Next, edit your product and click the **Properties** tab form the sidebar options.
-- Add a new property searching for ```Gender``` and then enter the value ```Female```.
+- Add a new property by typing in the property field **g:gender** this will search for your newly created propery:```g:gender```, select g:gender when it appears in the list, and then enter the value ```female``` and click **update**.
 
 
-This will add ```<g:gender>Female</g:gender>``` into your feed for this product.
+This will add ```<g:gender>Female</g:gender>``` into your feed for this specific product.
 
-**NOTE:** There are two things to keep in mind when adding data to your feed using Product Properties.
-- Ideally, you will want to un-check the **SHOW PROPERTY** option so that this Product Property does not get displayed on your store front.
-- Product Specific date entered using Product Properties will be applied to all variants.
+**NOTE:** There are a few things to keep in mind when adding data to your feed using Product Properties.
+- Make sure to use the **g:** notation for the property name.
+- Ideally, you will want to un-check the **SHOW PROPERTY** option so that this property is not visable on your store front.
+- Any data entered using properties should apply to all variants (options) of this product.
 
-### Adding A Brand
-Often a brand is required along with a Unique Identifier to get your product approved in Google Merchant Center.
-
-You can achieve this by following the **Adding Product Specific Data** section above, but using the following: Name = ```Brand``` Presentation = ```product_feed_data```.
-
-### Unique Identifier
+### Unique Identifiers
 You will notice that you now have an option to add a unique identifier to the master product and its variants.
 
 It is a minimum requirement for most products passed into Google Merchant Center to have a Barcode (GTIN), or a Manufactures Part Number (MPN), you can set the type of unique identifier you prefer in the product and variant settings.
 
 ## ToDo's
-- Set XML language based on current.store language (upcoming release of Spree 4.X)
 - Add in sale price logic when this is part of the spree core.
 - Write spec tests.
 
