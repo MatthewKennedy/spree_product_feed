@@ -21,7 +21,6 @@ module Spree
           image: structured_images(product),
           description: product.description,
           sku: structured_sku(product),
-          gtin13: structured_unique_identifier(product),
           brand: {
             '@type': 'Brand',
             name: structured_brand(product)
@@ -45,10 +44,6 @@ module Spree
 
     def structured_sku(product)
       product.default_variant.sku? ? product.default_variant.sku : product.sku
-    end
-
-    def structured_unique_identifier(product)
-      product.default_variant.unique_identifier? ? product.default_variant.unique_identifier : product.unique_identifier
     end
 
     def structured_condition(product)
