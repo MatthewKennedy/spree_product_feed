@@ -1,0 +1,7 @@
+<div data-hook="product_feed_active">
+ <%= f.field_container :product_feed_active, class: ['form-group'] do %>
+    <%= f.check_box :product_feed_active %>
+    <%= f.label :product_feed_active, Spree.t(:product_feed_active) %>
+    <%= f.error_message_on :product_feed_active %>
+ <% end %>
+</div>

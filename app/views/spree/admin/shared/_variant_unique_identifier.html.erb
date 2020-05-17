@@ -1,0 +1,12 @@
+<hr>
+<%= f.field_container :unique_identifier, class: ['form-group'] do %>
+  <%= f.label :unique_identifier, Spree.t(:unique_identifier) %>
+  <%= f.text_field :unique_identifier, class: 'form-control barcode' %>
+  <%= f.error_message_on :unique_identifier %>
+<% end %>
+
+<%= f.field_container :unique_identifier_type, class: ['form-group'] do %>
+  <%= f.label :unique_identifier_type, Spree.t(:unique_identifier_type) %>
+  <%= f.select :unique_identifier_type, [['GTIN','gtin'], ['MPN','mpn']], {}, {class: 'select2'} %>
+  <%= f.error_message_on :unique_identifier_type %>
+<% end %>

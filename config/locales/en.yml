@@ -2,4 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  spree:
+    product_feed_active: Add to product feed
+    unique_identifier: Unique Identifier
+    unique_identifier_type: Unique Identifier Type
