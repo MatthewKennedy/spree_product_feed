@@ -14,7 +14,7 @@ Deface::Override.new(
 
 Deface::Override.new(
   virtual_path: 'spree/admin/variants/_form',
-  name: 'add_barcode_to_product_form',
+  name: 'add_barcode_to_variants_form',
   insert_bottom: '[data-hook="admin_variant_form_additional_fields"]',
   partial: 'spree/admin/shared/variant_unique_identifier'
 )

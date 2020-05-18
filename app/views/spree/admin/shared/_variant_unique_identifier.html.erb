@@ -10,3 +10,9 @@
   <%= f.select :unique_identifier_type, [['GTIN','gtin'], ['MPN','mpn']], {}, {class: 'select2'} %>
   <%= f.error_message_on :unique_identifier_type %>
 <% end %>
+
+ <%= f.field_container :show_in_product_feed, class: ['form-group'] do %>
+    <%= f.check_box :show_in_product_feed %>
+    <%= f.label :show_in_product_feed, Spree.t(:show_in_product_feed) %>
+    <%= f.error_message_on :show_in_product_feed %>
+ <% end %>
