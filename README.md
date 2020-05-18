@@ -73,6 +73,7 @@ It is a minimum requirement for most products passed into Google Merchant Center
 To view your feed, visit ```localhost:3000/products.rss``` in Chrome, (you may need to clear browser cache to see your changes).
 
 ```xml
+<!-- The first example is a variant with a sale price set using compare_at_price -->
 <item>
   <!-- Item id is created using -->
   <!-- store.id - master product.id - variant.id -->
@@ -84,9 +85,12 @@ To view your feed, visit ```localhost:3000/products.rss``` in Chrome, (you may n
 
   <!-- Automatically generated from product or variant data  -->
   <g:link>https://yourstore.com/products/mens-cotton-t-shirt?variant=14</g:link>
-  <g:image_link>https://yourstore.com/rails/active_storage/blobs/isdh988/xtr-nutrition-t-shirt-red.jpg</g:image_link>
+  <g:image_link>https://yourstore.com/rails/active_storage/blobs/isdh988/spree-t-shirt-red.jpg</g:image_link>
   <g:availability>in stock</g:availability>
+
+  <!-- Sale price data  -->
   <g:price>25.0 GBP</g:price>
+  <g:sale_price>22.25 GBP</g:sale_price>
 
   <!-- Unique Identifiers  -->
   <g:gtin>3090364680183</g:gtin>
@@ -109,9 +113,33 @@ To view your feed, visit ```localhost:3000/products.rss``` in Chrome, (you may n
   <g:age_group>adult</g:age_group>
   <g:material>cotton</g:material>
 </item>
+
+<!-- The Second example is a basic product with no variants, no sale price -->
+<!-- but the title and description have been manually set using Properties  -->
+<item>
+  <!-- Item id is created using -->
+  <!-- store.id - master product.id-->
+  <g:id>1-11</g:id>
+
+  <!-- Automatically generated from product or variant data  -->
+  <g:link>https://yourstore.com/products/mug</g:link>
+  <g:image_link>https://yourstore.com/rails/active_storage/blobs/isdh988/spree-mug.jpg</g:image_link>
+  <g:availability>in stock</g:availability>
+  <g:price>6.99 GBP</g:price>
+
+  <!-- Unique Identifiers  -->
+  <g:gtin>4095364423100</g:gtin>
+  <g:sku>SPREE-MUG</g:sku>
+
+  <!-- Created manually using Properties -->
+  <g:title>Spree Mug</g:title>
+  <g:description>Spree mug with black logo and red base.</g:description>
+  <g:product_type>Home &gt; Mugs &gt; Spree Mug</g:product_type>
+  <g:google_product_category>22819</g:google_product_category>
+  <g:brand>Spree</g:brand>
+  <g:condition>new</g:condition>
+</item>
  ```
-## ToDo's
-- Write spec tests.
 
 ## Testing
 
