@@ -68,9 +68,9 @@ You will notice that you now have an option to add a unique identifier to the ma
 
 It is a minimum requirement for most products passed into Google Merchant Center to have a Barcode (GTIN), or a Manufactures Part Number (MPN), you can also set the type of unique identifier that you prefer to use, in the product and variant settings.
 
-## Feed Example
+## Feed Examples
 
-To view your feed, visit ```localhost:3000/products.rss``` in Chrome, (you may need to clear browser cache to see your changes).
+To view your feed as you build it, visit:  ```localhost:3000/products.rss``` in Chrome, (you may need to clear browser cache to see your changes).
 
 ```xml
 <!-- The first example is a variant with a sale price set using compare_at_price -->
@@ -114,20 +114,18 @@ To view your feed, visit ```localhost:3000/products.rss``` in Chrome, (you may n
   <g:material>cotton</g:material>
 </item>
 
-<!-- The Second example is a basic product with no variants, no sale price -->
+<!-- The second example is a basic product with no variants, no sale price -->
 <!-- but the title and description have been manually set using Properties  -->
 <item>
   <!-- Item id is created using -->
   <!-- store.id - master product.id-->
   <g:id>1-11</g:id>
 
-  <!-- Automatically generated from product or variant data  -->
+  <!-- Automatically generated from product data  -->
   <g:link>https://yourstore.com/products/mug</g:link>
   <g:image_link>https://yourstore.com/rails/active_storage/blobs/isdh988/spree-mug.jpg</g:image_link>
   <g:availability>in stock</g:availability>
   <g:price>6.99 GBP</g:price>
-
-  <!-- Unique Identifiers  -->
   <g:gtin>4095364423100</g:gtin>
   <g:sku>SPREE-MUG</g:sku>
 
