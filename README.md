@@ -13,7 +13,7 @@ This is great for building Enhanced Listings on Google Shopping and works perfec
 
 ### Sale Price Built In
 
-You can take full advantage of the sale price functionaily built into Spree 4.2 creating sale offers on Google Shopping.
+You can take full advantage of the sale price (compare_at_price) functionality built into Spree 4.2 creating sale offers on your Google Shopping listings.
 
 ## Installation
 
@@ -75,10 +75,10 @@ To view your feed, visit ```localhost:3000/products.rss``` in Chrome, (you may n
 ```xml
 <item>
   <!-- Item id is created using -->
-  <!-- store.id - product.id - variant.id -->
+  <!-- store.id - master product.id - variant.id -->
   <g:id>1-13-14</g:id>
 
-  <!-- Title and description can be overiden if needed -->
+  <!-- Title and description can be overridden if needed -->
   <g:title>Spree Cotton T-Shirt</g:title>
   <g:description>Spree logo mens T-Shirt made from 100% cotton.</g:description>
 
@@ -88,7 +88,7 @@ To view your feed, visit ```localhost:3000/products.rss``` in Chrome, (you may n
   <g:availability>in stock</g:availability>
   <g:price>25.0 GBP</g:price>
 
-  <!-- Unique Idenitifiers  -->
+  <!-- Unique Identifiers  -->
   <g:gtin>3090364680183</g:gtin>
   <g:sku>SPREE-T-RED-S</g:sku>
 
@@ -96,8 +96,8 @@ To view your feed, visit ```localhost:3000/products.rss``` in Chrome, (you may n
   <g:size>S</g:size>
   <g:color>red</g:color>
 
-  <!-- Variants are given an item_group_id as folows -->
-  <!-- store.id - product.id -->
+  <!-- Variants are given an item_group_id as follows -->
+  <!-- store.id - master product.id -->
   <g:item_group_id>1-13</g:item_group_id>
 
   <!-- Created manually using Properties -->
