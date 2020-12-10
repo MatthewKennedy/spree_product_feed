@@ -12,7 +12,8 @@ module Spree
       def xml_options
         options = option_values
         options = sort_options(options)
-        options = present_options(options)
+
+        present_options(options)
       end
 
       def xml_url_option
@@ -60,7 +61,6 @@ module Spree
       def join_options(options)
         options.join("&")
       end
-      
     end
   end
 end

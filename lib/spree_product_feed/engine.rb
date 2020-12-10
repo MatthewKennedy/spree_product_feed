@@ -1,8 +1,8 @@
 module SpreeProductFeed
   class Engine < Rails::Engine
-    require 'spree/core'
+    require "spree/core"
     isolate_namespace Spree
-    engine_name 'spree_product_feed'
+    engine_name "spree_product_feed"
 
     # use rspec for tests
     config.generators do |g|
@@ -10,7 +10,7 @@ module SpreeProductFeed
     end
 
     def self.activate
-      Dir.glob(File.join(File.dirname(__FILE__), '../../app/**/*_decorator*.rb')) do |c|
+      Dir.glob(File.join(File.dirname(__FILE__), "../../app/**/*_decorator*.rb")).sort.each do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
     end
