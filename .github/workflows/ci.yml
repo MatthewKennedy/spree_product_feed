@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: ['2.7', '2.6']
+        ruby: ['2.6', '2.7', 'head']
     steps:
       - uses: actions/checkout@master
 
@@ -28,7 +28,8 @@ jobs:
           path: vendor/bundle
           key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
-            ${{ runner.os }}-gem-
+            ${{ runner.os }}-${{ matrix.ruby }}-gem-
+
       - name: Install dependencies
         run: |
           sudo apt-get update

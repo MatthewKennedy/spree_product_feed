@@ -1,6 +1,7 @@
 # Spree Product Feed | For Spree 4.2
 
 [![Build Status](https://travis-ci.org/MatthewKennedy/spree_product_feed.svg?branch=master)](https://travis-ci.org/MatthewKennedy/spree_product_feed)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 
 The Spree Product Feed extension allows you to connect your Spree store directly to Google Merchant Center and Facebook Catalog via a live RSS feed.
 
