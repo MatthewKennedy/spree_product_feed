@@ -8,10 +8,7 @@ Additionally, your products can then be exported from Google Merchant Center acr
 
 ### Enhanced Listings Ready
 
-Spree Product Feed extension will automatically recognise a product with variants, take each variant and create new feed item grouped under the master product id.
-
-This is great for building Enhanced Listings on Google Shopping and works perfectly with Facebook Catalog.
-![Google Merchant enhanced listing](https://lh3.googleusercontent.com/U52jfORqQSkO57TyGLFqdln08B7GnGYm5h0tyg91HxsN-4JoX7g2WR8CePG79udqEym1=w895)
+Spree Product Feed extension will automatically recognise a product with variants, take each variant and create new feed item grouped under the master product id, this is great for building **Enhanced Listings** on Google Shopping and works perfectly with Facebook Catalog.
 
 ### Sale Price Built In
 
