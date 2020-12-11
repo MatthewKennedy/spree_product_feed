@@ -9,20 +9,20 @@ on:
     branches:
       - master
 jobs:
-  postgres:
+  mysql:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: ['2.7']
+        ruby: ['2.6']
 
     services:
-      postgres:
-        image: postgres:12
+      mysql:
+        image: mysql:8
         env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: password
-          POSTGRES_DB: test
-        ports: ['5432:5432']
+          MYSQL_ROOT_PASSWORD: password
+          MSQL_DATABASE: test
+        ports: ['3306:3306']
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
 
     steps:
       - uses: actions/checkout@master
@@ -53,7 +53,7 @@ jobs:
 
       - name: Run tests
         env:
-          DATABASE_URL: postgres://postgres:password@localhost:5432/test
+          DATABASE_URL: mysql2://root:password@127.0.0.1:3306/test
           RAILS_ENV: test
         run: |
           bundle exec appraisal rake
