@@ -9,11 +9,21 @@ on:
     branches:
       - master
 jobs:
-  sqlite:
+  postgres:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: ['2.7', '2.6']
+        ruby: ['2.7']
+
+    services:
+      postgres:
+        image: postgres:12
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: test
+        ports: ['5432:5432']
+
     steps:
       - uses: actions/checkout@master
 
@@ -43,6 +53,7 @@ jobs:
 
       - name: Run tests
         env:
+          DATABASE_URL: postgres://postgres:password@localhost:5432/test
           RAILS_ENV: test
         run: |
           bundle exec appraisal rake
