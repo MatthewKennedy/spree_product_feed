@@ -9,24 +9,6 @@ on:
     branches:
       - master
 jobs:
-  # STANDARD RB
-  standard:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby: ['2.7']
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Ruby ${{ matrix.ruby }}
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.ruby }}
-          bundler-cache: true
-
-      - name: Run StandardRB
-        run: bundle exec standardrb --format progress
-
-
   # SQLITE
   sqlite:
     runs-on: ubuntu-latest
