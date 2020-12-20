@@ -1,4 +1,4 @@
-# Spree Product Feed | For Spree 4.2
+# spree_product_feed
 
 ![CI](https://github.com/MatthewKennedy/spree_product_feed/workflows/CI/badge.svg) ![Standard Rb](https://github.com/MatthewKennedy/spree_product_feed/workflows/Standard%20Rb/badge.svg)
 
