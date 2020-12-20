@@ -7,7 +7,5 @@ end
 
 gem "spree", github: "spree/spree", branch: "master"
 gem "spree_auth_devise", github: "spree/spree_auth_devise", branch: "master"
-gem "rails-controller-testing"
-gem "standard"
 
 gemspec
