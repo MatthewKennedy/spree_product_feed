@@ -11,7 +11,7 @@ describe "Set store values in xml feed", type: :feature, js: true do
 
       expect(page.body).to have_text("<title>Spree Test Store</title>")
       expect(page.body).to have_text("<link>www.example.com</link>")
-      expect(page.body).to have_text("<language>en-us</language>")
+      expect(page.body).to have_text("<language>#{I18n.locale}</language>")
     end
   end
 

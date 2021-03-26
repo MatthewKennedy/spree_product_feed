@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.author = "Matthew Kennedy"
   s.email = "m.kennedy@me.com"
   s.homepage = "https://github.com/matthewkennedy/spree_product_feed"
-  s.license = "BSD-3-Clause"
+  s.license = "MIT"
 
   s.files = `git ls-files`.split("\n").reject { |f| f.match(/^spec/) && !f.match(/^spec\/fixtures/) }
   s.require_path = "lib"

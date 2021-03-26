@@ -55,7 +55,7 @@ describe "Tests The Product & Varaints Feed Items Are Visable & Work", type: :fe
       visit spree.admin_products_path
       within_row(1) { click_icon :edit }
 
-      select2 "shirt", from: "Option Types"
+      select2 "shirt", from: "Option Types", tag: true
       wait_for { !page.has_button?("Update") }
       click_button "Update"
       expect(page).to have_content("successfully updated!")
